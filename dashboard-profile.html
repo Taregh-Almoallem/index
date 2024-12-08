@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="plugin/package/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <section id="navbar">
+      <div class="container-fluid p-0 m-0">
+        <div class="row m-0">
+          <div
+            class="col-12 navbar-top d-flex justify-content-center align-items-center"
+          >
+            <div class="row w-100">
+              <div
+                class="col-2 btn-nav-mobile d-lg-none d-flex justify-content-end align-items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="col-3 col-lg-3 d-flex justify-content-end justify-content-lg-start align-items-center"
+              >
+                <div class="logo">
+                  <img src="img/webnex-logo-1.webp" alt="" />
+                </div>
+              </div>
+              <div
+                class="col-5 search-box d-none d-lg-flex justify-content-center align-items-center"
+              >
+                <input
+                  class="col-10 search-input"
+                  type="text"
+                  placeholder="لطفا محصول خود را جستجو کنید..."
+                />
+                <button class="search-btn">جستجو</button>
+              </div>
+              <div class="col-7 col-lg-4 d-flex justify-content-end">
+                <ul
+                  class="d-flex justify-content-end align-items-center mt-3 gap-4 gap-lg-5"
+                >
+                  <li class="rigester">ورود/ثبت نام</li>
+                  <a href="store.html"
+                    ><li class="icon">
+                      <div class="count-store fa-numbers">2</div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="28"
+                        fill="currentColor"
+                        class="bi bi-cart-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                        />
+                      </svg></li
+                  ></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 navbar-bottom d-none d-lg-flex pt-4">
+            <ul class="d-flex justify-content-start align-items-center gap-5">
+              <a href="index.html">
+                <li>صفحه اصلی</li>
+              </a>
+              <li class="dropdown">
+                محصولات
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-caret-down-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                  />
+                </svg>
+                <div id="menu-dropdown" class="p-4">
+                  <div class="row">
+                    <ul class="col-2 menu-dropdown mt-3">
+                      <a href=""
+                        ><p>
+                          برند های مختلف موبایل
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            fill="currentColor"
+                            class="bi bi-chevron-left"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                            />
+                          </svg></p
+                      ></a>
+                      <a href="filter.html">
+                        <li>گوشی اپل</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی سامسونگ</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی هواوی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی شیائومی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی ال جی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی انر</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی نوکیا</li>
+                      </a>
+                    </ul>
+                    <ul class="col-2 menu-dropdown mt-3">
+                      <a href=""
+                        ><p>
+                          برند های مختلف موبایل
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            fill="currentColor"
+                            class="bi bi-chevron-left"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                            />
+                          </svg></p
+                      ></a>
+                      <a href="filter.html">
+                        <li>گوشی اپل</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی سامسونگ</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی هواوی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی شیائومی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی ال جی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی انر</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی نوکیا</li>
+                      </a>
+                    </ul>
+                    <ul class="col-2 menu-dropdown mt-3">
+                      <a href="filter.html"
+                        ><p>
+                          برند های مختلف موبایل
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            fill="currentColor"
+                            class="bi bi-chevron-left"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                            />
+                          </svg></p
+                      ></a>
+                      <a href="filter.html">
+                        <li>گوشی اپل</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی سامسونگ</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی هواوی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی شیائومی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی ال جی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی انر</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی نوکیا</li>
+                      </a>
+                    </ul>
+                    <ul class="col-2 menu-dropdown mt-3">
+                      <a href="filter.html"
+                        ><p>
+                          برند های مختلف موبایل
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            fill="currentColor"
+                            class="bi bi-chevron-left"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                            />
+                          </svg></p
+                      ></a>
+                      <a href="filter.html">
+                        <li>گوشی اپل</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی سامسونگ</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی هواوی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی شیائومی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی ال جی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی انر</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی نوکیا</li>
+                      </a>
+                    </ul>
+                    <ul class="col-2 menu-dropdown mt-3">
+                      <a href="filter.html"
+                        ><p>
+                          برند های مختلف موبایل
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            fill="currentColor"
+                            class="bi bi-chevron-left"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                            />
+                          </svg></p
+                      ></a>
+                      <a href="filter.html">
+                        <li>گوشی اپل</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی سامسونگ</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی هواوی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی شیائومی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی ال جی</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی انر</li>
+                      </a>
+                      <a href="filter.html">
+                        <li>گوشی نوکیا</li>
+                      </a>
+                    </ul>
+                    <div
+                      class="col-2 pic d-flex justify-content-center align-items-center"
+                    >
+                      <img src="img/webnex-logo-1.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <a href="">
+                <li>وبلاگ ها</li>
+              </a>
+              <a href="about-us.html">
+                <li>درباره ما</li>
+              </a>
+              <a href="contact-us.html">
+                <li>تماس با ما</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section-nav-mobile d-lg-none">
+        <div class="row p-4">
+          <div class="col-12 colse-btn d-flex justify-content-end">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              fill="currentColor"
+              class="bi bi-x-circle-fill text-danger"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+              />
+            </svg>
+          </div>
+          <div
+            class="col-12 search-box d-flex justify-content-center align-items-center pt-5"
+          >
+            <input
+              class="col-12 search-input"
+              type="text"
+              placeholder="لطفا محصول خود را جستجو کنید..."
+            />
+            <button class="search-btn">جستجو</button>
+          </div>
+          <div class="col-12 item-nav-mobile pt-5">
+            <ul>
+              <a href=""><li>صفحه اصلی</li></a>
+              <li id="menu-dropdown-mobile">
+                محصولات
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-caret-down-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                  />
+                </svg>
+                <div class="row">
+                  <ul class="col-12 menu-dropdown-mobile p-3">
+                    <li class="h6">برندهای مختلف موبایل</li>
+                    <a href="filter.html">
+                      <li>گوشی اپل</li>
+                    </a>
+                    <a href="filter.html">
+                      <li>گوشی سامسونگ</li>
+                    </a>
+                    <a href="filter.html">
+                      <li>گوشی هواوی</li>
+                    </a>
+                    <a href="filter.html">
+                      <li>گوشی شیائومی</li>
+                    </a>
+                    <a href="filter.html">
+                      <li>گوشی ال جی</li>
+                    </a>
+                    <a href="filter.html">
+                      <li>گوشی انر</li>
+                    </a>
+                    <a href="filter.html">
+                      <li>گوشی نوکیا</li>
+                    </a>
+                  </ul>
+                </div>
+              </li>
+              <a href="contact-us.html"><li>تماس با ما</li></a>
+              <a href="about-us.html"><li>درباره ما</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="dashboard">
+        <div class="row p-4">
+          <ul>
+            <a href="dashboard-profile.html">
+              <li class="account mt-0 mb-3 fs-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-person"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                  />
+                </svg>
+                مسلم امیری
+              </li>
+            </a>
+            <a href="dashboard-profile.html">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-bag"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
+                  />
+                </svg>
+                سفارش ها
+              </li>
+            </a>
+            <a href="dashboard-profile.html">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  />
+                </svg>
+                علاقه مندی ها
+              </li>
+            </a>
+            <a href="dashboard-profile.html">
+              <li class="position-relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-envelope-open"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z"
+                  />
+                </svg>
+                پیام ها
+                <div class="notif fa-numbers mt-2 mt-lg-1">4</div>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-box-arrow-right text-danger"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                  />
+                </svg>
+                خروج از حساب کاربری
+              </li>
+            </a>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <section class="main-dashboard">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-between">
+          <div class="col-12 right-dashboard">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center mt-1">
+                <img src="img/Taregh-AlMoallem.webp" alt="" />
+              </div>
+              <div class="col-12 d-flex justify-content-center fs-5 mt-2">
+                <p>طارق ال معلم</p>
+              </div>
+            </div>
+            <div class="row spec-dashborad gap-3 me-2">
+              <div
+                class="col-12 profile d-flex gap-2 text-secondary"
+                onclick="showDashboardSection('profiles')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                  />
+                </svg>
+                <p>پروفایل</p>
+              </div>
+              <div
+                class="col-12 order d-flex text-secondary gap-2"
+                onclick="showDashboardSection('orders')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bag-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                  />
+                </svg>
+                <p>سفارش ها</p>
+              </div>
+              <div
+                class="col-12 message d-flex gap-2 text-secondary"
+                onclick="showDashboardSection('messages')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-chat-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15"
+                  />
+                </svg>
+                <p>پیغام ها</p>
+                <span class="notif fa-numbers ms-3">4</span>
+              </div>
+              <div
+                class="col-12 d-flex text-secondary gap-2"
+                onclick="showDashboardSection('myadderes')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <p>آدرس های منتخب من</p>
+              </div>
+
+              <div
+                class="col-12 log-out d-flex text-danger gap-2"
+                onclick="showDashboardSection('log-out')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-box-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                  />
+                </svg>
+                <p>خروج</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 left-dashboard profiles mt-4 mt-lg-0">
+            <div class="row d-flex justify-content-around mt-3 mb-4">
+              <div
+                class="col-12 col-lg-3 box-status-dashboard bg-primary text-light"
+              >
+                <div
+                  class="row d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="col-3 icon-status-dashboard d-flex align-items-center pt-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                      class="bi bi-cart"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                      />
+                    </svg>
+                  </div>
+                  <div class="col-7">سفارشات کل</div>
+                  <div class="col-4 fs-5 fa-numbers">16</div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-3 box-status-dashboard bg-success text-light mt-3 mt-lg-0"
+              >
+                <div
+                  class="row d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="col-3 icon-status-dashboard d-flex align-items-center pt-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                      class="bi bi-truck"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+                      />
+                    </svg>
+                  </div>
+                  <div class="col-7">تحویل داده شده</div>
+                  <div class="col-4 fs-5 fa-numbers">16</div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-3 box-status-dashboard bg-danger text-light mt-3 mt-lg-0"
+              >
+                <div
+                  class="row d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="col-3 icon-status-dashboard d-flex align-items-center pt-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                      class="bi bi-x-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                      />
+                      <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </div>
+                  <div class="col-7">لغو شده</div>
+                  <div class="col-4 fs-5 fa-numbers">16</div>
+                </div>
+              </div>
+            </div>
+            <p class="h5 mb-5">اطلاعات حساب کاربری :</p>
+            <form>
+              <div class="row d-flex justify-content-around">
+                <div class="col-12 col-lg-4">
+                  <label for="fullNameMain" class="form-label"
+                    >نام و نام خانوادگی</label
+                  >
+                  <input
+                    type="text"
+                    id="fullNameMain"
+                    class="form-control"
+                    value="طارق ال معلم"
+                    readonly
+                  />
+                </div>
+                <div class="col-12 col-lg-4">
+                  <label for="nationalCodeMain" class="form-label"
+                    >کد ملی</label
+                  >
+                  <input
+                    type="text"
+                    id="nationalCodeMain"
+                    class="form-control"
+                    value="1234567890"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="row d-flex justify-content-around pt-4">
+                <div class="col-12 col-lg-4">
+                  <label for="phoneMain" class="form-label">شماره تماس</label>
+                  <input
+                    type="text"
+                    id="phoneMain"
+                    class="form-control"
+                    value="09374958369"
+                    readonly
+                  />
+                </div>
+                <div class="col-12 col-lg-4">
+                  <label for="emailMain" class="form-label">ایمیل</label>
+                  <input
+                    type="email"
+                    id="emailMain"
+                    class="form-control"
+                    value="contact@web-nex.ir"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="row d-flex justify-content-around pt-4">
+                <div class="col-12 col-lg-4">
+                  <label for="passwordMain" class="form-label">رمز عبور</label>
+                  <input
+                    type="password"
+                    id="passwordMain"
+                    class="form-control"
+                    value="09374958369"
+                    readonly
+                  />
+                </div>
+                <div class="col-12 col-lg-4">
+                  <label for="birthDateMain" class="form-label"
+                    >تاریخ تولد</label
+                  >
+                  <input
+                    type="text"
+                    id="birthDateMain"
+                    class="form-control"
+                    value="1400/01/01"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="row d-flex justify-content-around pt-4">
+                <div class="col-12 col-lg-4">
+                  <label for="provinceMain" class="form-label">استان</label>
+                  <input
+                    type="text"
+                    id="provinceMain"
+                    class="form-control"
+                    value="خوزستان"
+                    readonly
+                  />
+                </div>
+                <div class="col-12 col-lg-4">
+                  <label for="cityMain" class="form-label">شهر</label>
+                  <input
+                    type="text"
+                    id="cityMain"
+                    class="form-control"
+                    value="اهواز"
+                    readonly
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="col-12 d-flex justify-content-center">
+              <button
+                class="btn btn-primary mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#editModal"
+              >
+                ویرایش اطلاعات
+              </button>
+            </div>
+            <!-- Modal for Editing Information -->
+            <div
+              class="modal fade"
+              id="editModal"
+              tabindex="-1"
+              aria-labelledby="editModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title col-11" id="editModalLabel">
+                      ویرایش اطلاعات
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="editForm">
+                      <div class="mb-3">
+                        <label for="fullName" class="form-label"
+                          >نام و نام خانوادگی</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fullName"
+                          value="طارق ال معلم"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="nationalCode" class="form-label"
+                          >کد ملی</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nationalCode"
+                          value="1234567890"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="phone" class="form-label">شماره تماس</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phone"
+                          value="09374958369"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">ایمیل</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          value="contact@web-nex.ir"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="password" class="form-label"
+                          >رمز عبور</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          value="09374958369"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="birthDate" class="form-label"
+                          >تاریخ تولد</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="birthDate"
+                          value="1400-01-01"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="province" class="form-label">استان</label>
+                        <select
+                          name=""
+                          id="province"
+                          class="form-control col-12"
+                        >
+                          <option value="خوزستان">خوزستان</option>
+                          <option value="تهران">تهران</option>
+                          <option value="اصفهان">اصفهان</option>
+                          <option value="هرمزگان">هرمزگان</option>
+                          <option value="بوشهر">بوشهر</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="city" class="form-label">شهر</label>
+                        <select name="" id="city" class="form-control col-12">
+                          <option value="اهواز">اهواز</option>
+                          <option value="شادگان">شادگان</option>
+                          <option value="آبادان">آبادان</option>
+                          <option value="بندرماهشهر">بندرماهشهر</option>
+                          <option value="دزفول">دزفول</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      لغو
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      onclick="saveChanges()"
+                    >
+                      ذخیره
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 left-dashboard orders mt-4 mt-lg-0 d-none">
+            <div class="row d-flex justify-content-around mt-3">
+              <div
+                class="col-12 col-lg-3 box-status-dashboard bg-primary text-light"
+              >
+                <div
+                  class="row d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="col-3 icon-status-dashboard d-flex align-items-center pt-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                      class="bi bi-cart"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                      />
+                    </svg>
+                  </div>
+                  <div class="col-7">سفارشات کل</div>
+                  <div class="col-4 fs-5 fa-numbers">16</div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-3 box-status-dashboard bg-success text-light mt-3 mt-lg-0"
+              >
+                <div
+                  class="row d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="col-3 icon-status-dashboard d-flex align-items-center pt-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                      class="bi bi-truck"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+                      />
+                    </svg>
+                  </div>
+                  <div class="col-7">تحویل داده شده</div>
+                  <div class="col-4 fs-5 fa-numbers">16</div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-3 box-status-dashboard bg-danger text-light mt-3 mt-lg-0"
+              >
+                <div
+                  class="row d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="col-3 icon-status-dashboard d-flex align-items-center pt-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                      class="bi bi-x-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                      />
+                      <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </div>
+                  <div class="col-7">لغو شده</div>
+                  <div class="col-4 fs-5 fa-numbers">16</div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5 pt-lg-5 fa-numbers">
+              <span>سفارش های اخیر من : </span>
+              <div class="col-12">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>شماره سفارش</th>
+                      <th>تاریخ</th>
+                      <th>مبلغ</th>
+                      <th>وضعیت</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#1f3G4t</td>
+                      <td>1403/08/21</td>
+                      <td>742,000 تومان</td>
+                      <td class="status-pending">در انتظار پرداخت</td>
+                    </tr>
+                    <tr>
+                      <td>#2H5Y5u</td>
+                      <td>1403/09/08</td>
+                      <td>730,000 تومان</td>
+                      <td class="status-paid">پرداخت شده</td>
+                    </tr>
+                    <tr>
+                      <td>#R34trU</td>
+                      <td>1403/11/01</td>
+                      <td>1,900,000 تومان</td>
+                      <td class="status-canceled">لغو شده</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 left-dashboard messages mt-4 mt-lg-0 d-none">
+            <div class="col-12 centered-text mb-5">
+              <span></span>
+              <p>پیغام ها</p>
+              <span></span>
+            </div>
+
+            <div class="notification-container">
+              <h2>پیغام‌های شما</h2>
+              <div class="notification-box">
+                <!-- Single Notification -->
+                <div class="notification-item unread">
+                  <div class="icon">
+                    <i class="bi bi-cart"></i>
+                  </div>
+                  <div class="content">
+                    <h4>سفارش جدید شما ثبت شد</h4>
+                    <p>
+                      سفارش شماره 12435 با موفقیت ثبت شد. برای اطلاعات بیشتر
+                      کلیک کنید.
+                    </p>
+                    <span class="time">10 دقیقه پیش</span>
+                  </div>
+                </div>
+
+                <!-- Single Notification -->
+                <div class="notification-item">
+                  <div class="icon">
+                    <i class="bi bi-tag"></i>
+                  </div>
+                  <div class="content">
+                    <h4>تخفیف ویژه برای شما</h4>
+                    <p>کد تخفیف 20 درصدی برای خرید بعدی شما فعال شد.</p>
+                    <span class="time">2 ساعت پیش</span>
+                  </div>
+                </div>
+
+                <!-- Single Notification -->
+                <div class="notification-item">
+                  <div class="icon">
+                    <i class="bi bi-truck"></i>
+                  </div>
+                  <div class="content">
+                    <h4>وضعیت سفارش شما</h4>
+                    <p>سفارش شماره 12432 به پست تحویل داده شد.</p>
+                    <span class="time">دیروز</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 left-dashboard myadderes mt-4 mt-lg-0 d-none">
+            <div class="col-12 centered-text mb-5">
+              <span></span>
+              <p>آدرس های منتخب</p>
+              <span></span>
+            </div>
+            <div class="row d-flex justify-content-between gap-3">
+              <div
+                class="col-12 col-lg-5 box-adderes d-flex justify-content-center p-3"
+              >
+                <div class="row">
+                  <input
+                    type="radio"
+                    name="radio-adderes"
+                    class="col-1 d-flex justify-content-center align-items-center"
+                  />
+                  <p class="col-9 h5">اهواز ، خیابان ، کوچه ، پلاک 0</p>
+                  <p class="col-12 text-secondary fa-numbers">
+                    کد پستی: ۷۱۴۳۸-۹۱۲۳
+                  </p>
+                  <p class="col-12 text-secondary fa-numbers mt-0">
+                    شماره تماس: ۰۷۱-۳۲۲۴۶۷۸۹
+                  </p>
+                  <div class="col-5">
+                    <button
+                      class="btn-adderes-change"
+                      data-bs-toggle="modal"
+                      data-bs-target="#addressModal"
+                    >
+                      ویرایش آدرس
+                    </button>
+                  </div>
+                  <div class="col-5">
+                    <button class="btn-adderes-remove bg-danger">
+                      حذف آدرس
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-5 box-adderes d-flex justify-content-center p-3"
+              >
+                <div class="row">
+                  <input
+                    type="radio"
+                    name="radio-adderes"
+                    class="col-1 d-flex justify-content-center align-items-center"
+                    checked
+                  />
+                  <p class="col-9 h5">اهواز ، خیابان ، کوچه ، پلاک 0</p>
+                  <p class="col-12 text-secondary fa-numbers">
+                    کد پستی: ۷۱۴۳۸-۹۱۲۳
+                  </p>
+                  <p class="col-12 text-secondary fa-numbers mt-0">
+                    شماره تماس: ۰۷۱-۳۲۲۴۶۷۸۹
+                  </p>
+                  <div class="col-5">
+                    <button
+                      class="btn-adderes-change"
+                      data-bs-toggle="modal"
+                      data-bs-target="#addressModal"
+                    >
+                      ویرایش آدرس
+                    </button>
+                  </div>
+                  <div class="col-5">
+                    <button class="btn-adderes-remove bg-danger">
+                      حذف آدرس
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-5 box-adderes d-flex justify-content-center p-3"
+              >
+                <div class="row">
+                  <input
+                    type="radio"
+                    name="radio-adderes"
+                    class="col-1 d-flex justify-content-center align-items-center"
+                  />
+                  <p class="col-9 addressInputmain h5">
+                    اهواز ، خیابان ، کوچه ، پلاک 0
+                  </p>
+                  <p
+                    class="col-12 postalCodeInputmain text-secondary fa-numbers"
+                  >
+                    کد پستی: ۷۱۴۳۸-۹۱۲۳
+                  </p>
+                  <p
+                    class="col-12 phoneInputmain text-secondary fa-numbers mt-0"
+                  >
+                    شماره تماس: ۰۷۱-۳۲۲۴۶۷۸۹
+                  </p>
+                  <div class="col-5">
+                    <button
+                      class="btn-adderes-change"
+                      data-bs-toggle="modal"
+                      data-bs-target="#addressModal"
+                    >
+                      ویرایش آدرس
+                    </button>
+                  </div>
+                  <div class="col-5">
+                    <button class="btn-adderes-remove bg-danger">
+                      حذف آدرس
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="addressModal"
+              tabindex="-1"
+              aria-labelledby="addressModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title col-11 me-3" id="addressModalLabel">
+                      جزئیات آدرس
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="addressInput" class="form-label"
+                          >آدرس کامل:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="addressInput"
+                          value="تهران، خیابان ولیعصر، میدان ونک"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="postalCodeInput" class="form-label"
+                          >کد پستی:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="postalCodeInput"
+                          value="۱۵۱۷۶-۸۹۴۵"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="phoneInput" class="form-label"
+                          >شماره تماس:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phoneInput"
+                          value="۰۲۱-۲۲۳۳۴۵۶۷"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      بستن
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      onclick="editadderes()"
+                    >
+                      ذخیره تغییرات
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-12 col-lg-6">
+                <button class="btn-new-adderes d-flex">
+                  اضافه کردن آدرس جدید
+                  <i
+                    class="bi bi-plus-circle d-flex align-items-center text-center me-2 fs-5"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid fotter pb-5">
+        <div class="container">
+          <div class="row top-fotter mt-2 mb-5">
+            <div class="col-12 mt-4 text-fotter h5">
+              از جدیدترین تخفیف ها باخبر شوید...
+            </div>
+            <div class="row">
+              <div class="col-7 col-md-6 col-lg-4">
+                <div class="row input">
+                  <div class="col-7 d-flex align-items-center">
+                    <input type="text" placeholder="ایمیل یا شماره تلفن..." />
+                  </div>
+                  <div
+                    class="col-5 d-flex align-items-center justify-content-end"
+                  >
+                    <button>ثبت</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 col-md-6 col-lg-8 d-flex justify-content-end">
+                <a href="#">
+                  <button class="text-fotter btn-to-top p-2">
+                    بازگشت به بالا
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-up-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+                      />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row center-fotter">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="row">
+                <div class="col-12 h2 text-success"><span>وب نکس</span></div>
+                <div class="col-12 h6 text-success mb-4">
+                  <span>فروشگاه اینترنتی وب نکس</span>
+                </div>
+                <div class="col-12 text-light justify-text">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 pt-4 pt-lg-0">
+              <div class="row mb-4">
+                <div class="col-12 d-flex justify-content-start text-light h6">
+                  - دسترسی سریع
+                </div>
+              </div>
+              <div class="row d-flex justify-content-start mb-3">
+                <div class="col-4"><a href="">صفحه اصلی</a></div>
+                <div class="col-4">
+                  <a href="">ورود</a> <a href=""> | ثبت نام</a>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-start mb-3">
+                <div class="col-4"><a href="">فروشگاه</a></div>
+                <div class="col-4"><a href="">وبلاگ</a></div>
+              </div>
+              <div class="row d-flex justify-content-start mb-3">
+                <div class="col-4"><a href="">تماس با ما</a></div>
+                <div class="col-4"><a href="">شرایط و قوانین</a></div>
+              </div>
+              <div class="row d-flex justify-content-start mb-3">
+                <div class="col-4"><a href="">سوالات متداول</a></div>
+                <div class="col-4"><a href="">حریم خصوصی</a></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="row mb-4">
+                <div class="col-12 text-light h6 d-flex justify-content-start">
+                  - تماس با ما
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-12 text-light d-flex justify-content-start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-geo-alt"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                    />
+                    <path
+                      d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                    />
+                  </svg>
+                  <div class="fa-numbers">
+                    خوزستان ، شادگان ، خیابان ، کوچه ، پلاک 10
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div
+                  class="col-12 text-light d-flex justify-content-start mb-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-envelope ms-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                    />
+                  </svg>
+                  traeghalmoallem@gmail.com
+                </div>
+                <div class="col-5 text-light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-telephone"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                    />
+                  </svg>
+                  <span class="text-light fa-numbers">09374958369</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <a href="t.me/traeghalmoallem.com">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-telegram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="col-2">
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-instagram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid bg-black">
+        <div class="row bottom-fotter d-flex align-items-center text-light">
+          <div
+            class="col-12 d-flex justify-content-center text-light fa-numbers"
+          >
+            تمامی حقوقی این سایت متعلق به طارق ال معلم می باشد 1403
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="message-remove">
+      <p class="message-text-remove bg-danger text-light">
+        با موفقیت از حساب کاربری خارج شدید
+      </p>
+    </section>
+    <script src="plugin/package/swiper-bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
