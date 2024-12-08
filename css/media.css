@@ -1,0 +1,233 @@
+@media (min-width: 0px) and (max-width: 991.98px) {
+  .navbar-nav.left {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
+
+  .navbar-nav .nav-item:first-child {
+    margin-right: 0;
+  }
+  .search {
+    display: none;
+  }
+  .container-input {
+    display: block;
+  }
+  .col-card .h5 {
+    font-size: 0.8rem;
+  }
+  .text-blog {
+    font-size: 0.75rem;
+  }
+  .right-filter img {
+    width: 12vh;
+    height: 15vh;
+  }
+  .text-explain {
+    font-size: 0.7rem;
+  }
+  .price span,
+  .price s {
+    font-size: 0.8rem;
+  }
+  .card button {
+    font-size: 0.6rem;
+  }
+  .input input {
+    font-size: 0.75rem;
+  }
+  .swiper-slide .text-secondary {
+    font-size: 0.8rem !important;
+  }
+  .swiper-slide button {
+    font-size: 0.8rem;
+  }
+  .card .text-secondary {
+    font-size: 0.5rem !important;
+  }
+  .right-filter img {
+    width: 17vh;
+    height: 23vh;
+  }
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (min-width: 991px) {
+  .container-input {
+    display: none;
+  }
+  .search {
+    display: flex;
+  }
+  .spec-store {
+    width: 60% !important;
+  }
+  .shop-store {
+    width: 36% !important;
+  }
+  .right-dashboard {
+    width: 25% !important;
+  }
+  .left-dashboard {
+    width: 73% !important;
+  }
+  .right-filter {
+    width: 73% !important;
+  }
+}
+/* موبایل‌های کوچک (کمتر از 576 پیکسل) */
+
+@media (max-width: 480px) {
+  .swiper-slide .img-header2 {
+    width: 32vh;
+    height: 32vh;
+  }
+  .swiper-slide .img-header1 {
+    width: 35vh;
+    height: 35vh;
+  }
+  .right-header .title-text {
+    font-size: 3vh;
+  }
+  .right-header .pargraph-text {
+    font-size: 1.7vh;
+  }
+  .product-discount .swiper-slide img,
+  #product-slide2 .swiper-slide img {
+    width: 12vh;
+    height: 16vh;
+  }
+  .product-discount .swiper-slide {
+    font-size: 2.3vh;
+  }
+  .product-discount .swiper-slide .price {
+    font-size: 3.1vh;
+    margin-bottom: 3vh;
+  }
+  .timer-discount .subject {
+    font-size: 3vh;
+    text-align: center;
+  }
+  .timer-discount .countdown-card {
+    font-size: 2.1vh;
+  }
+  .timer-discount .timer {
+    font-size: 2.7vh;
+  }
+}
+
+/* موبایل‌های متوسط (بین 576px تا 767px) */
+@media (min-width: 480px) and (max-width: 767.98px) {
+  .swiper-slide .img-header2 {
+    width: 40vh;
+    height: 40vh;
+  }
+  .swiper-slide .img-header1 {
+    width: 45vh;
+    height: 45vh;
+  }
+  .right-header .title-text {
+    font-size: 3vh;
+  }
+  .right-header .pargraph-text {
+    font-size: 1.7vh;
+  }
+  .product-discount .swiper-slide img,
+  #product-slide2 .swiper-slide img {
+    width: 14vh;
+    height: 18vh;
+  }
+  .product-discount .swiper-slide,
+  #product-slide2 .swiper-slide {
+    font-size: 3vh;
+  }
+  .product-discount .swiper-slide .price,
+  #product-slide2 .swiper-slide .price {
+    font-size: 3.1vh;
+    margin-bottom: 3vh;
+  }
+  .timer-discount .subject {
+    font-size: 3vh;
+    text-align: center;
+  }
+  .timer-discount .countdown-card {
+    font-size: 2.1vh;
+  }
+  .timer-discount .timer {
+    font-size: 2.7vh;
+  }
+}
+
+/* تبلت‌ها و موبایل‌های بزرگ (بین 768px تا 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .left-header .swiper-slide img {
+    width: 46vh;
+    height: 46vh;
+  }
+  .right-header .title-text {
+    font-size: 4vh;
+  }
+  .product-discount .swiper-slide img,
+  #product-slide2 .swiper-slide img {
+    width: 18vh;
+    height: 22vh;
+  }
+  .product-discount .swiper-slide,
+  #product-slide2 .swiper-slide {
+    font-size: 2.5vh;
+  }
+}
+
+/* لپ‌تاپ‌های کوچک (بین 992px تا 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .left-header .swiper-slide img {
+    width: 60vh;
+    height: 60vh;
+  }
+  .product-discount .swiper-slide img,
+  #product-slide2 .swiper-slide img {
+    width: 12vh;
+    height: 18vh;
+  }
+  .product-discount .swiper-slide,
+  #product-slide2t .swiper-slide {
+    font-size: 3.2vh;
+  }
+  .text-explain {
+    font-size: 0.8rem;
+  }
+}
+
+/* لپ‌تاپ‌ها و دسکتاپ‌های معمولی (بین 1200px تا 1399px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .left-header .swiper-slide img {
+    width: 75vh;
+    height: 75vh;
+  }
+  .product .card-box {
+    width: 10%;
+  }
+  .product-discount .swiper-slide img,
+  #product-slide2 .swiper-slide img {
+    width: 16vh;
+    height: 22vh;
+  }
+  .product-discount .swiper-slide,
+  #product-slide2 .swiper-slide {
+    font-size: 3.3vh;
+  }
+}
+
+/* دسکتاپ‌های بزرگ و مانیتورهای بزرگ‌تر (1400 پیکسل به بالا) */
+@media (min-width: 1400px) {
+  .left-header .swiper-slide img {
+    width: 78vh;
+    height: 78vh;
+  }
+}
